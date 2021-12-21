@@ -2,8 +2,8 @@
 - hosts: all
   become: yes
   tasks:
-  - name: i want to install apache2 on ubuntu nodes
+  - name: i want to install httpd on amazon linux nodes
     apt: 
-       name: apache2
+       name: httpd
        state: present 
-    when: ansible_os_family=="Debian"
+    
