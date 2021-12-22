@@ -2,7 +2,7 @@
 - hosts: all
   become: yes
   tasks:
-  - name: i want to install httpd on amazon linux nodes
+  - name: i want to install httpd on  linux nodes
     apt: 
        name: httpd
        state: present 
