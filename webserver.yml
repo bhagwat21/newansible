@@ -8,11 +8,7 @@
        state: present
        when: ansible_os_family == 'Debian'
 
-  - name: start service on ubuntu nodes
-    service:
-     name: apache2
-     state: started
-     when: ansible_os_family == 'Debian'
+ 
 
   - name: i want to install webserver on Redhat nodes
     yum:
@@ -20,9 +16,5 @@
      state: present
      when: ansible_os_family == 'Radhat'
      
-  - name: start service on Redhat nodes
-    service:
-     name: httpd
-     state: started
-     when: ansible_os_family == 'Redhat'
+  
 
