@@ -1,0 +1,9 @@
+---
+  - hosts: all
+    become: yes
+    tasks:
+  - name: i want to install webserver on linux nodes
+    yum:
+     name: httpd
+     state: present
+    
