@@ -3,7 +3,7 @@
     become: yes
     tasks:
         - name: Install the httpd on linux nodes
-          apt:
+          yum:
            name: httpd
            state: present
            
