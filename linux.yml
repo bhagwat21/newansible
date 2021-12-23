@@ -14,6 +14,6 @@
 
         - name: install java on linux nodes
           yum:
-           name: java- java-1.8.0-openjdk
-           state: present
+              name: java-1.8.0-openjdk
+              state: present
 
