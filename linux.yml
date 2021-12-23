@@ -2,8 +2,12 @@
   - hosts: all
     become: yes
     tasks:
-        - name: Install the webserver nodes
+        - name: httpd package install on nodes
           yum:
               name: httpd
               state: present
-           
+        - name: starting httpd service
+          service:
+                 name: httpd
+                 state: started
+                 enable: yes  
