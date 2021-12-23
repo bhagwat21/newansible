@@ -3,8 +3,8 @@
     become: yes
     tasks:
   - name: Install the latest version of Apache
-    yum:
-       name: httpd
+    apt:
+       name: apache2
        state: latest
 
   - name: Install Apache >= 2.4
