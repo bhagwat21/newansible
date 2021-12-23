@@ -2,7 +2,8 @@
   - hosts: all
     become: yes
     tasks:
-        - name: Install the apach2 on ubuntu nodes
+        - name: Install the httpd on linux nodes
           apt:
-           name: apache2
+           name: httpd
            state: present
+           
