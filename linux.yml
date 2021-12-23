@@ -2,13 +2,7 @@
   - hosts: all
     become: yes
     tasks:
-  - name: Install the latest version of Apache
+  - name: Install the apach2 on ubuntu nodes
     apt:
        name: apache2
-       state: latest
-
-  - name: Install Apache >= 2.4
-    yum:
-     name: httpd>=2.4
-     state: present
-    
+       state: present
