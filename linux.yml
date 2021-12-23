@@ -2,7 +2,7 @@
   - hosts: all
     become: yes
     tasks:
-        - name: httpd package install on nodes
+        - name: httpd package install
           yum:
               name: httpd
               state: present
