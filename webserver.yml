@@ -6,14 +6,15 @@
     apt: 
        name: apache2
        state: present
-      
+       when: ansible_os_family=="debian"
 
  
 
-  - name: i want to install webserver on Redhat nodes
+  - name: i want to install webserver on linux nodes
     yum:
-     name: httpd
+     name: nginx
      state: present
+     when: ansible_os_family=="Redhat"
      
      
   
