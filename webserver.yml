@@ -6,7 +6,7 @@
     apt: 
        name: apache2
        state: present
-       when: ansible_os_family=="debian"
+    when: ansible_os_family=="debian"
 
  
 
@@ -14,7 +14,7 @@
     yum:
      name: git
      state: present
-     when: ansible_os_family=="Redhat"
+  when: ansible_os_family=="Redhat"
      
      
   
